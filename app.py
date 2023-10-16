@@ -1,11 +1,11 @@
 import streamlit as st
 import pandas as pd
 #%%
+#大标题“ES-SCLC治疗周期综合管理平台”
+st.title('ES-SCLC治疗周期综合管理平台')
 # 将streamlit的页面分成两列
 left_column, right_column = st.columns(2)
-#%%
-# 左侧页面显示中文标题“ES-SCLC治疗周期综合管理平台”
-left_column.title('ES-SCLC治疗周期综合管理平台')
+
 #%%
 # 左侧显示副标题“患者数据输入“
 left_column.subheader('患者数据输入')
