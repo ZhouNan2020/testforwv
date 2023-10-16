@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 #%%
+# 页面要最宽显示
+st.set_page_config(layout="wide")
 #大标题“ES-SCLC治疗周期综合管理平台”
 st.title('ES-SCLC免疫治疗综合管理平台')
 # 将streamlit的页面分成两列
