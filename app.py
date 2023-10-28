@@ -33,18 +33,18 @@ right_column.subheader('患者综合风险预测')
 
 right_column.markdown('### 死亡风险评估：')
 
-right_column.markdown('#### 30天死亡风险：0.1%；90天死亡风险：0.2%；180天死亡风险：0.3%')
+right_column.markdown('##### 30天死亡风险：0.1%；90天死亡风险：0.2%；180天死亡风险：0.3%')
 right_column.markdown('---')
 
 right_column.markdown('### 不良事件风险评估：')
 
-right_column.markdown('#### 免疫相关不良事件风险：0.1%；非免疫相关不良事件风险：0.2%')
+right_column.markdown('##### 免疫相关不良事件风险：0.1%；非免疫相关不良事件风险：0.2%')
 right_column.markdown('---')
 
 right_column.markdown('### 转移风险评估：')
 
-right_column.markdown('#### 转移风险：0.1%')
-right_column.markdown('#### 复发风险：0.2%')
+right_column.markdown('##### 转移风险：0.1%')
+right_column.markdown('##### 复发风险：0.2%')
 
 # 添加分割线
 right_column.markdown('---')
