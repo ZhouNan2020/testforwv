@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 #%%
+
 # 页面要最宽显示
 st.set_page_config(layout="wide")
 #大标题“ES-SCLC治疗周期综合管理平台”
@@ -28,29 +29,22 @@ chemotherapy = left_column.selectbox(label='化疗方案', options=['EP', 'EC', 
 # 目前周期，下拉选择，label=”目前周期“，options=[‘1’，‘2’，‘3’，]
 cycle = left_column.selectbox(label='目前周期', options=['1', '2', '3'])
 #%%
-# 右侧显示副标题“患者管理信息”
 right_column.subheader('患者综合风险预测')
 
-# 显示文字：患者风险评估
-right_column.write('死亡风险评估：')
+right_column.markdown('### 死亡风险评估：')
 
-# 显示文字：30天死亡风险：0.1%；90天死亡风险：0.2%；180天死亡风险：0.3%
-right_column.write('30天死亡风险：0.1%；90天死亡风险：0.2%；180天死亡风险：0.3%')
+right_column.markdown('30天死亡风险：0.1%；90天死亡风险：0.2%；180天死亡风险：0.3%')
 right_column.markdown('---')
-# 显示文字：不良事件风险风险评估：
-right_column.write('不良事件风险风险评估：')
 
-# 显示文字：免疫相关不良事件风险：0.1%；非免疫相关不良事件风险：0.2%
-right_column.write('免疫相关不良事件风险：0.1%；非免疫相关不良事件风险：0.2%')
+right_column.markdown('### 不良事件风险评估：')
+
+right_column.markdown('免疫相关不良事件风险：0.1%；非免疫相关不良事件风险：0.2%')
 right_column.markdown('---')
-# 显示文字：转移风险评估：
-right_column.write('复发和转移风险评估：')
 
-# 显示文字：转移风险：0.1%
-right_column.write('转移风险：0.1%')
-right_column.write('转移风险：0.2%')
+right_column.markdown('### 转移风险评估：')
+
+right_column.markdown('转移风险：0.1%')
+right_column.markdown('转移风险：0.2%')
 
 # 添加分割线
 right_column.markdown('---')
-
-
