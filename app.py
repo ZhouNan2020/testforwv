@@ -50,5 +50,5 @@ right_column.markdown('##### 复发风险：0.2%')
 right_column.markdown('---')
 
 # 添加CR+PR的概率
-right_column.markdown('### 疗效评估：')
+right_column.markdown('### 患者治疗响应：')
 right_column.markdown('##### 患者达到客观缓解的概率（即至少达到PR）：30%')
