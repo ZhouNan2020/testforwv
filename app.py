@@ -21,7 +21,7 @@ drug = left_column.selectbox(label='免疫治疗药物', options=['Atezolizumab'
 # 剂量，下拉选择，label=”剂量“，options=[‘1200mg’，‘1500mg’，‘其他’]
 dose = left_column.selectbox(label='剂量', options=['1200mg', '1500mg', '其他'])
 # 转移情况，下拉选择，label=”转移情况“，options=[‘无转移’，‘有转移’]
-metastasis = left_column.selectbox(label='细胞因子', options=[‘IL-2’,’IL-4’,’IL-5’,’IL-6’,’IL-8’,’IL-1β’,’IL-17A’,’IL-10’,’IFN-a’,’TNF-a’,’IL-12P70’,’IFN-γ’])
+metastasis = left_column.selectbox(label='细胞因子', options=['IL-2','IL-4','IL-5','IL-6','IL-8','IL-1β','IL-17A','IL-10','IFN-a','TNF-a','IL-12P70','IFN-γ'])
 # 合并疗法，下拉选择，label=”合并疗法“，options=[‘无合并疗法’，‘化疗’，‘放疗’，‘化疗+放疗’]
 combined_therapy = left_column.selectbox(label='合并疗法', options=['无合并疗法', '化疗', '放疗', '化疗+放疗'])
 # 化疗方案，下拉选择，label=”化疗方案“，options=[‘EP’，‘EC’，‘IP’，‘IC’]
