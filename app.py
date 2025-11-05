@@ -4,8 +4,8 @@ import pandas as pd
 
 # 页面要最宽显示
 st.set_page_config(layout="wide")
-#大标题“ES-SCLC患者治疗响应综合管理平台”
-st.title('ES-SCLC患者治疗响应综合管理平台')
+#大标题“非小细胞肺癌免疫治疗疗效预测模型”
+st.title('非小细胞肺癌免疫治疗疗效预测模型')
 # 将streamlit的页面分成两列
 left_column, right_column = st.columns(2)
 
@@ -21,7 +21,7 @@ drug = left_column.selectbox(label='免疫治疗药物', options=['Atezolizumab'
 # 剂量，下拉选择，label=”剂量“，options=[‘1200mg’，‘1500mg’，‘其他’]
 dose = left_column.selectbox(label='剂量', options=['1200mg', '1500mg', '其他'])
 # 转移情况，下拉选择，label=”转移情况“，options=[‘无转移’，‘有转移’]
-metastasis = left_column.selectbox(label='转移情况', options=['无转移', '有转移'])
+metastasis = left_column.selectbox(label='细胞因子', options=[‘IL-2’,’IL-4’,’IL-5’,’IL-6’,’IL-8’,’IL-1β’,’IL-17A’,’IL-10’,’IFN-a’,’TNF-a’,’IL-12P70’,’IFN-γ’])
 # 合并疗法，下拉选择，label=”合并疗法“，options=[‘无合并疗法’，‘化疗’，‘放疗’，‘化疗+放疗’]
 combined_therapy = left_column.selectbox(label='合并疗法', options=['无合并疗法', '化疗', '放疗', '化疗+放疗'])
 # 化疗方案，下拉选择，label=”化疗方案“，options=[‘EP’，‘EC’，‘IP’，‘IC’]
@@ -29,11 +29,11 @@ chemotherapy = left_column.selectbox(label='化疗方案', options=['EP', 'EC', 
 # 目前周期，下拉选择，label=”目前周期“，options=[‘1’，‘2’，‘3’，]
 cycle = left_column.selectbox(label='目前周期', options=['1', '2', '3'])
 #%%
-right_column.subheader('患者综合风险预测')
+right_column.subheader('患者免疫治疗疗效预测')
 
-right_column.markdown('### 死亡风险评估：')
+right_column.markdown('### 疗效预测评估：')
 
-right_column.markdown('##### 30天死亡风险：0.1%；90天死亡风险：0.2%；180天死亡风险：0.3%')
+right_column.markdown('##### PR:10%; PD:5%; SD:3%)
 right_column.markdown('---')
 
 right_column.markdown('### 不良事件风险评估：')
