@@ -33,7 +33,7 @@ right_column.subheader('患者免疫治疗疗效预测')
 
 right_column.markdown('### 疗效预测评估：')
 
-right_column.markdown('##### PR:10%; PD:5%; SD:3%)
+right_column.markdown('##### PR:10%; PD:5%; SD:3%')
 right_column.markdown('---')
 
 right_column.markdown('### 不良事件风险评估：')
